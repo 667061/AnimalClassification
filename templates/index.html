@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Upload</title>
+    <title>Animal classification</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
-        <h1>Upload an Image</h1>
+        <h1>Animal classification</h1>
         <form id="upload-form" method="post" enctype="multipart/form-data">
             <div id="drop-area">
-                <p>Drag & Drop your files here</p>
+                <p>Drag & Drop your animal images here</p>
                 <p>or</p>
                 <input type="file" id="fileElem" accept="image/*" onchange="handleFiles(this.files)">
                 <label class="button" for="fileElem">Select Files</label>
