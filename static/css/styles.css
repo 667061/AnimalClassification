@@ -1,0 +1,70 @@
+/* static/css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    padding: 2em;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+#drop-area.hover {
+    border-color: #333;
+    background: #e9e9e9;
+}
+
+button {
+    padding: 0.5em 1em;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#gallery {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery img {
+    max-width: 150px;
+    margin: 0.5em;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#gallery div {
+    margin-top: 1em;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
