@@ -20,6 +20,7 @@ def classify_image(img_path):
     refined_results = detected_objects.copy()
     refined_results.update(detected_labels)
 
+    # Limited set of animals to classify, could be extended.
     specific_animal_labels = [
         'dog', 'cat', 'lion', 'tiger', 'elephant', 'giraffe', 'zebra', 
         'kangaroo', 'koala', 'panda', 'bear', 'wolf', 'fox', 'rabbit', 
@@ -27,8 +28,8 @@ def classify_image(img_path):
         'whale', 'shark', 'octopus', 'penguin', 'eagle', 'parrot', 
         'flamingo', 'peacock', 'sparrow', 'owl', 'hawk', 'snake', 
         'lizard', 'chameleon', 'frog', 'toad', 'butterfly', 'bee', 
-        'ant', 'spider', 'fish', 'salmon', 'trout', 'piranha', 
-        'tuna', 'goldfish', 'carp'
+        'ant', 'spider','squirrel', 'fish', 'salmon', 'trout', 'piranha', 
+        'tuna', 'goldfish', 'carp', 'bird'
     ]
 
     for animal in specific_animal_labels:
